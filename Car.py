@@ -13,7 +13,7 @@ class Car:
         self.discount = Car.default_discount
 
         # Encapsulation
-        self._mileage = mileage
+        self._mileage = mileage # Kilometers
         self.__base_price = base_price
 
         # Aggregation
@@ -21,7 +21,7 @@ class Car:
 
     def get_price(self) -> float:
         price_with_discount = self.__base_price * (1 - self.discount / 100)
-        final_price = price_with_discount - self._mileage / 10000
+        final_price = price_with_discount - self._mileage / 100
         return final_price
 
     def is_used(self) -> bool:
