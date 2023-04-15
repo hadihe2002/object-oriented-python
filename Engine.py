@@ -13,5 +13,5 @@ class Engine:
         self.type = engine_type
         self.description = description
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.description

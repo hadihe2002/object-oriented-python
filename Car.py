@@ -20,7 +20,7 @@ class Car:
         self._base_price = base_price
 
         # Aggregation
-        self.tire = tire
+        self.tires = [tire,tire,tire,tire]
 
         # Append Car
         Car.all_cars.append(self)
